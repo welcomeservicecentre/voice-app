@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #1a1a2e;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #6366f1;
+}
+
+#status {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #16213e;
+    border-radius: 10px;
+    min-height: 50px;
+}
+
+#pttButton {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: none;
+    background: #6366f1;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 30px;
+}
+
+#pttButton:hover {
+    background: #4f46e5;
+    transform: scale(1.05);
+}
+
+#pttButton:active {
+    background: #dc2626;
+    transform: scale(0.95);
+}
+
+#pttButton.recording {
+    background: #dc2626;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+#conversation {
+    text-align: left;
+    background: #16213e;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.message.user {
+    background: #6366f1;
+    margin-left: 20%;
+}
+
+.message.ai {
+    background: #0f3460;
+    margin-right: 20%;
+}
