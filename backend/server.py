@@ -16,9 +16,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Import modules
-from backend.transcriber import Transcriber
-from backend.kimi_client import KimiClient
-from backend.tts_synthesizer import TTSSynthesizer
+from transcriber import Transcriber
+from kimi_client import KimiClient
+from tts_synthesizer import TTSSynthesizer
 
 # Configuration
 HOST = os.getenv('HOST', '0.0.0.0')
